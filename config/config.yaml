@@ -1,0 +1,22 @@
+logging:
+  file_path: null
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  level: INFO
+model:
+  batch_size: 1
+  device: auto
+  do_sample: false
+  max_length: 50
+  min_length: 25
+  name: facebook/bart-large-cnn
+  temperature: 1.0
+  top_p: 1.0
+  use_fast_tokenizer: true
+ui:
+  default_max_summary_length: 50
+  default_min_summary_length: 25
+  description: Generate concise summaries using state-of-the-art transformer models
+  enable_batch_processing: true
+  max_text_length: 5000
+  show_evaluation_metrics: true
+  title: Abstractive Text Summarization
